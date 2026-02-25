@@ -51,11 +51,25 @@
   },
   {
     "id": "title",
-    "fields": []
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "content",
+        "label": "Content",
+        "valueType": "string"
+      }
+    ]
   },
   {
     "id": "introduction",
-    "fields": []
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "content",
+        "label": "Content",
+        "valueType": "string"
+      }
+    ]
   },
   {
     "id": "hero",
