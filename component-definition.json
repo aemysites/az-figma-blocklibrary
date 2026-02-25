@@ -63,7 +63,7 @@
           "plugins": {
             "da": {
               "name": "title",
-              "rows": 1,
+              "rows": 2,
               "columns": 1,
               "fields": [
                 {
@@ -82,7 +82,7 @@
           "plugins": {
             "da": {
               "name": "introduction",
-              "rows": 1,
+              "rows": 2,
               "columns": 1,
               "fields": [
                 {
