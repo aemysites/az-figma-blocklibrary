@@ -10,7 +10,18 @@
     "components": [
       "text",
       "image",
+      "title",
+      "introduction",
+      "hero",
+      "cards",
+      "columns",
       "columns-teaser"
+    ]
+  },
+  {
+    "id": "cards",
+    "components": [
+      "card"
     ]
   }
 ]
