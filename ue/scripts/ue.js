@@ -10,7 +10,6 @@
  * governing permissions and limitations under the License.
  */
 
-import { showSlide } from '../../blocks/carousel/carousel.js';
 import { moveInstrumentation } from './ue-utils.js';
 
 const setupObservers = () => {
@@ -120,11 +119,6 @@ const setupUEEventHandlers = () => {
               details.open = false;
             });
             element.open = true;
-            break;
-          case 'carousel':
-            if (index) {
-              showSlide(blockEl, index);
-            }
             break;
           case 'tabs':
             if (element === block) {
