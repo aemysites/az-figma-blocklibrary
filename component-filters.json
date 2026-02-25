@@ -15,16 +15,9 @@
       "hero",
       "cards",
       "columns",
-      "columns-teaser"
+      "columns-teaser",
+      "cards-teaser"
     ]
-  },
-  {
-    "id": "title",
-    "components": []
-  },
-  {
-    "id": "introduction",
-    "components": []
   },
   {
     "id": "cards",
@@ -33,11 +26,9 @@
     ]
   },
   {
-    "id": "columns",
-    "components": []
-  },
-  {
-    "id": "columns-teaser",
-    "components": []
+    "id": "cards-teaser",
+    "components": [
+      "card-teaser"
+    ]
   }
 ]
