@@ -5,10 +5,32 @@
       "id": "default",
       "components": [
         {
-          "...": "./ue/models/text.json#/definitions"
+          "title": "Text",
+          "id": "text",
+          "model": "text",
+          "plugins": {
+            "da": {
+              "name": "text",
+              "type": "text"
+            }
+          }
         },
         {
-          "...": "./ue/models/image.json#/definitions"
+          "title": "Image",
+          "id": "image",
+          "model": "image",
+          "plugins": {
+            "da": {
+              "name": "image",
+              "type": "image",
+              "fields": [
+                {
+                  "name": "imageAlt",
+                  "selector": "img[alt]"
+                }
+              ]
+            }
+          }
         }
       ]
     },
@@ -17,7 +39,15 @@
       "id": "sections",
       "components": [
         {
-          "...": "./ue/models/section.json#/definitions"
+          "title": "Section",
+          "id": "section",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div></div>"
+            }
+          },
+          "filter": "section",
+          "model": "section"
         }
       ]
     },
@@ -26,7 +56,128 @@
       "id": "blocks",
       "components": [
         {
-          "...": "./ue/models/blocks/*.json#/definitions"
+          "title": "Title",
+          "id": "title",
+          "model": "title",
+          "filter": "title",
+          "plugins": {
+            "da": {
+              "name": "title"
+            }
+          }
+        },
+        {
+          "title": "Introduction",
+          "id": "introduction",
+          "model": "introduction",
+          "filter": "introduction",
+          "plugins": {
+            "da": {
+              "name": "introduction"
+            }
+          }
+        },
+        {
+          "title": "Hero",
+          "id": "hero",
+          "model": "hero",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div class=\"hero\"><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture><h1></h1></div></div></div>",
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div>div>picture>img[src]"
+                },
+                {
+                  "name": "imageAlt",
+                  "selector": "div>div>picture>img[alt]"
+                },
+                {
+                  "name": "text",
+                  "selector": "div>div>h1"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Cards",
+          "id": "cards",
+          "model": "cards",
+          "filter": "cards",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 2
+            }
+          }
+        },
+        {
+          "title": "Card",
+          "id": "card",
+          "model": "card",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 2,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div:nth-child(1)>picture>img[src]"
+                },
+                {
+                  "name": "imageAlt",
+                  "selector": "div:nth-child(1)>picture>img[alt]"
+                },
+                {
+                  "name": "text",
+                  "selector": "div:nth-child(2)"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Columns",
+          "id": "columns",
+          "model": "columns",
+          "filter": "columns",
+          "plugins": {
+            "da": {
+              "name": "columns",
+              "rows": 1,
+              "columns": 2,
+              "behaviour": "columns"
+            }
+          }
+        },
+        {
+          "title": "Columns Teaser",
+          "id": "columns-teaser",
+          "model": "columns-teaser",
+          "filter": "columns-teaser",
+          "plugins": {
+            "da": {
+              "name": "columns-teaser",
+              "rows": 2,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "content",
+                  "selector": "div:nth-child(1)>div"
+                },
+                {
+                  "name": "image",
+                  "selector": "div:nth-child(2)>div:nth-child(2)>picture>img[src]"
+                },
+                {
+                  "name": "imageAlt",
+                  "selector": "div:nth-child(2)>div:nth-child(2)>picture>img[alt]"
+                }
+              ]
+            }
+          }
         }
       ]
     }

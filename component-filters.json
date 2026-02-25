@@ -1,11 +1,27 @@
 [
   {
-    "...": "./ue/models/page.json#/filters"
+    "id": "main",
+    "components": [
+      "section"
+    ]
   },
   {
-    "...": "./ue/models/section.json#/filters"
+    "id": "section",
+    "components": [
+      "text",
+      "image",
+      "title",
+      "introduction",
+      "hero",
+      "cards",
+      "columns",
+      "columns-teaser"
+    ]
   },
   {
-    "...": "./ue/models/blocks/*.json#/filters"
+    "id": "cards",
+    "components": [
+      "card"
+    ]
   }
 ]
