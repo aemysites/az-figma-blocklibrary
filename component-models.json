@@ -40,6 +40,10 @@
     ]
   },
   {
+    "id": "main",
+    "fields": []
+  },
+  {
     "id": "section",
     "fields": [
       {

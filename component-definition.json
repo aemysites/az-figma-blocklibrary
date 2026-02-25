@@ -35,6 +35,23 @@
       ]
     },
     {
+      "title": "Main Content",
+      "id": "main-content",
+      "components": [
+        {
+          "title": "Main",
+          "id": "main",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<main></main>"
+            }
+          },
+          "filter": "main",
+          "model": "main"
+        }
+      ]
+    },
+    {
       "title": "Sections",
       "id": "sections",
       "components": [
