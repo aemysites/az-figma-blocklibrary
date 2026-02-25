@@ -64,13 +64,7 @@
             "da": {
               "name": "title",
               "rows": 1,
-              "columns": 1,
-              "fields": [
-                {
-                  "name": "content",
-                  "selector": "div>div"
-                }
-              ]
+              "columns": 1
             }
           }
         },
@@ -83,13 +77,7 @@
             "da": {
               "name": "introduction",
               "rows": 1,
-              "columns": 1,
-              "fields": [
-                {
-                  "name": "content",
-                  "selector": "div>div"
-                }
-              ]
+              "columns": 1
             }
           }
         },
@@ -176,21 +164,19 @@
           "filter": "columns-teaser",
           "plugins": {
             "da": {
-              "name": "columns-teaser",
-              "rows": 1,
-              "columns": 2,
+              "unsafeHTML": "<div class=\"columns-teaser\"><div><div></div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/png\" srcset=\"\"><img loading=\"lazy\"></picture></div></div></div>",
               "fields": [
                 {
                   "name": "content",
-                  "selector": "div>div:nth-child(1)"
+                  "selector": "div>div>div:nth-child(1)"
                 },
                 {
                   "name": "image",
-                  "selector": "div>div:nth-child(2)>picture>img[src]"
+                  "selector": "div>div>div:nth-child(2)>picture>img[src]"
                 },
                 {
                   "name": "imageAlt",
-                  "selector": "div>div:nth-child(2)>picture>img[alt]"
+                  "selector": "div>div>div:nth-child(2)>picture>img[alt]"
                 }
               ]
             }
