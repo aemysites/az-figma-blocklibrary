@@ -1,125 +1,103 @@
-{
-  "groups": [
-    {
-      "title": "Blocks",
-      "id": "blocks",
-      "components": [
-        {
-          "id": "title",
-          "fields": [
-            {
-              "component": "text",
-              "name": "title",
-              "label": "Title",
-              "valueType": "string"
-            },
-            {
-              "component": "richtext",
-              "name": "text",
-              "label": "Text",
-              "valueType": "string"
-            }
-          ]
-        },
-        {
-          "id": "introduction",
-          "fields": [
-            {
-              "component": "text",
-              "name": "heading",
-              "label": "Heading",
-              "valueType": "string"
-            },
-            {
-              "component": "richtext",
-              "name": "text",
-              "label": "Text",
-              "valueType": "string"
-            }
-          ]
-        },
-        {
-          "id": "hero",
-          "fields": [
-            {
-              "component": "reference",
-              "name": "image",
-              "label": "Image",
-              "valueType": "string"
-            },
-            {
-              "component": "text",
-              "name": "imageAlt",
-              "label": "Image Alt Text",
-              "valueType": "string"
-            },
-            {
-              "component": "text",
-              "name": "heading",
-              "label": "Heading",
-              "valueType": "string"
-            }
-          ]
-        },
-        {
-          "id": "columns",
-          "fields": [
-            {
-              "component": "richtext",
-              "name": "column1",
-              "label": "Column 1",
-              "valueType": "string"
-            },
-            {
-              "component": "richtext",
-              "name": "column2",
-              "label": "Column 2",
-              "valueType": "string"
-            },
-            {
-              "component": "richtext",
-              "name": "column3",
-              "label": "Column 3",
-              "valueType": "string"
-            }
-          ]
-        },
-        {
-          "id": "columns-teaser",
-          "fields": [
-            {
-              "component": "reference",
-              "name": "image",
-              "label": "Image",
-              "valueType": "string"
-            },
-            {
-              "component": "text",
-              "name": "imageAlt",
-              "label": "Image Alt Text",
-              "valueType": "string"
-            },
-            {
-              "component": "richtext",
-              "name": "content",
-              "label": "Content",
-              "valueType": "string"
-            }
-          ]
-        },
-        {
-          "id": "cards",
-          "fields": [
-            {
-              "component": "richtext",
-              "name": "cards",
-              "label": "Cards",
-              "valueType": "string",
-              "multi": true
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": "title",
+    "fields": [
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "label": "Text"
+      }
+    ]
+  },
+  {
+    "id": "introduction",
+    "fields": [
+      {
+        "component": "text",
+        "name": "heading",
+        "label": "Heading"
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "label": "Text"
+      }
+    ]
+  },
+  {
+    "id": "hero",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Image"
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Image Alt Text"
+      },
+      {
+        "component": "text",
+        "name": "heading",
+        "label": "Heading"
+      }
+    ]
+  },
+  {
+    "id": "columns",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "column1",
+        "label": "Column 1"
+      },
+      {
+        "component": "richtext",
+        "name": "column2",
+        "label": "Column 2"
+      },
+      {
+        "component": "richtext",
+        "name": "column3",
+        "label": "Column 3"
+      }
+    ]
+  },
+  {
+    "id": "columns-teaser",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Image"
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Image Alt Text"
+      },
+      {
+        "component": "richtext",
+        "name": "content",
+        "label": "Content"
+      }
+    ]
+  },
+  {
+    "id": "cards",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "cards",
+        "label": "Cards",
+        "multi": true
+      }
+    ]
+  }
+]

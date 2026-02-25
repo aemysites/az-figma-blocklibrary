@@ -1,2 +1,4 @@
 mountpoints:
-  /: https://admin.da.live/source/aemysites/az-figma-blocklibrary/main
+  /:
+    url: https://content.da.live/aemysites/az-figma-blocklibrary/
+    type: markup
