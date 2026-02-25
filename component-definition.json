@@ -64,7 +64,13 @@
             "da": {
               "name": "title",
               "rows": 1,
-              "columns": 1
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "content",
+                  "selector": "div>div"
+                }
+              ]
             }
           }
         },
@@ -77,7 +83,13 @@
             "da": {
               "name": "introduction",
               "rows": 1,
-              "columns": 1
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "content",
+                  "selector": "div>div"
+                }
+              ]
             }
           }
         },
