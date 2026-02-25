@@ -43,7 +43,8 @@
           "id": "section",
           "plugins": {
             "da": {
-              "unsafeHTML": "<div></div>"
+              "name": "section",
+              "type": "container"
             }
           },
           "filter": "section",
