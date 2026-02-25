@@ -164,21 +164,8 @@
           "filter": "columns-teaser",
           "plugins": {
             "da": {
-              "unsafeHTML": "<div class=\"columns-teaser\"><div><div></div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/png\" srcset=\"\"><img loading=\"lazy\"></picture></div></div></div>",
-              "fields": [
-                {
-                  "name": "content",
-                  "selector": "div>div>div:nth-child(1)"
-                },
-                {
-                  "name": "image",
-                  "selector": "div>div>div:nth-child(2)>picture>img[src]"
-                },
-                {
-                  "name": "imageAlt",
-                  "selector": "div>div>div:nth-child(2)>picture>img[alt]"
-                }
-              ]
+              "name": "columns-teaser",
+              "behaviour": "none"
             }
           }
         }
