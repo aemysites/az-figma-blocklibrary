@@ -16,6 +16,5 @@ export default function decorate(block) {
     const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]);
     img.closest('picture').replaceWith(optimizedPic);
   });
-  block.textContent = '';
-  block.append(ul);
+  block.replaceChildren(ul);
 }

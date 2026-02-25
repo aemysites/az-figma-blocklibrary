@@ -56,89 +56,6 @@
       "id": "blocks",
       "components": [
         {
-          "title": "Title",
-          "id": "title",
-          "model": "title",
-          "filter": "title",
-          "plugins": {
-            "da": {
-              "name": "title"
-            }
-          }
-        },
-        {
-          "title": "Introduction",
-          "id": "introduction",
-          "model": "introduction",
-          "filter": "introduction",
-          "plugins": {
-            "da": {
-              "name": "introduction"
-            }
-          }
-        },
-        {
-          "title": "Hero",
-          "id": "hero",
-          "model": "hero",
-          "plugins": {
-            "da": {
-              "unsafeHTML": "<div class=\"hero\"><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture><h1></h1></div></div></div>",
-              "fields": [
-                {
-                  "name": "image",
-                  "selector": "div>div>picture>img[src]"
-                },
-                {
-                  "name": "imageAlt",
-                  "selector": "div>div>picture>img[alt]"
-                },
-                {
-                  "name": "text",
-                  "selector": "div>div>h1"
-                }
-              ]
-            }
-          }
-        },
-        {
-          "title": "Cards",
-          "id": "cards",
-          "model": "cards",
-          "filter": "cards",
-          "plugins": {
-            "da": {
-              "rows": 1,
-              "columns": 2
-            }
-          }
-        },
-        {
-          "title": "Card",
-          "id": "card",
-          "model": "card",
-          "plugins": {
-            "da": {
-              "rows": 1,
-              "columns": 2,
-              "fields": [
-                {
-                  "name": "image",
-                  "selector": "div:nth-child(1)>picture>img[src]"
-                },
-                {
-                  "name": "imageAlt",
-                  "selector": "div:nth-child(1)>picture>img[alt]"
-                },
-                {
-                  "name": "text",
-                  "selector": "div:nth-child(2)"
-                }
-              ]
-            }
-          }
-        },
-        {
           "title": "Cards Teaser",
           "id": "cards-teaser",
           "model": "cards-teaser",
@@ -176,16 +93,51 @@
           }
         },
         {
-          "title": "Columns",
-          "id": "columns",
-          "model": "columns",
-          "filter": "columns",
+          "title": "Columns Teaser",
+          "id": "columns-teaser",
+          "model": "columns-teaser",
+          "filter": "columns-teaser",
           "plugins": {
             "da": {
-              "name": "columns",
-              "rows": 1,
-              "columns": 2,
-              "behaviour": "columns"
+              "name": "columns-teaser",
+              "rows": 2,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "content",
+                  "selector": "div:nth-child(1)>div"
+                },
+                {
+                  "name": "image",
+                  "selector": "div:nth-child(2)>div:nth-child(2)>picture>img[src]"
+                },
+                {
+                  "name": "imageAlt",
+                  "selector": "div:nth-child(2)>div:nth-child(2)>picture>img[alt]"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Introduction",
+          "id": "introduction",
+          "model": "introduction",
+          "filter": "introduction",
+          "plugins": {
+            "da": {
+              "name": "introduction"
+            }
+          }
+        },
+        {
+          "title": "Title",
+          "id": "title",
+          "model": "title",
+          "filter": "title",
+          "plugins": {
+            "da": {
+              "name": "title"
             }
           }
         }

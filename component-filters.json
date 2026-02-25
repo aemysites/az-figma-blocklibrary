@@ -15,14 +15,7 @@
       "hero",
       "cards",
       "columns",
-      "columns-teaser",
-      "cards-teaser"
-    ]
-  },
-  {
-    "id": "cards",
-    "components": [
-      "card"
+      "columns-teaser"
     ]
   },
   {
