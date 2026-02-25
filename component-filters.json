@@ -19,9 +19,25 @@
     ]
   },
   {
+    "id": "title",
+    "components": []
+  },
+  {
+    "id": "introduction",
+    "components": []
+  },
+  {
     "id": "cards",
     "components": [
       "card"
     ]
+  },
+  {
+    "id": "columns",
+    "components": []
+  },
+  {
+    "id": "columns-teaser",
+    "components": []
   }
 ]
