@@ -164,7 +164,23 @@
           "filter": "columns-teaser",
           "plugins": {
             "da": {
-              "name": "columns-teaser"
+              "name": "columns-teaser",
+              "columns": 0,
+              "rows": 0,
+              "fields": [
+                {
+                  "name": "content",
+                  "selector": "div>div:nth-child(1)"
+                },
+                {
+                  "name": "image",
+                  "selector": "div>div:nth-child(2)>picture>img[src]"
+                },
+                {
+                  "name": "imageAlt",
+                  "selector": "div>div:nth-child(2)>picture>img[alt]"
+                }
+              ]
             }
           }
         }
