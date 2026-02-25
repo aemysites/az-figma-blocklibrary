@@ -64,7 +64,21 @@
             "da": {
               "name": "columns-teaser",
               "rows": 1,
-              "columns": 2
+              "columns": 2,
+              "fields": [
+                {
+                  "name": "content",
+                  "selector": "div>div:nth-child(1)"
+                },
+                {
+                  "name": "image",
+                  "selector": "div>div:nth-child(2)>picture>img[src]"
+                },
+                {
+                  "name": "imageAlt",
+                  "selector": "div>div:nth-child(2)>picture>img[alt]"
+                }
+              ]
             }
           }
         }

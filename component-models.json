@@ -20,6 +20,10 @@
     ]
   },
   {
+    "id": "text",
+    "fields": []
+  },
+  {
     "id": "image",
     "fields": [
       {
@@ -47,6 +51,26 @@
   },
   {
     "id": "columns-teaser",
-    "fields": []
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "content",
+        "label": "Content",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Image",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Image Alt Text",
+        "valueType": "string"
+      }
+    ]
   }
 ]
