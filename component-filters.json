@@ -5,12 +5,7 @@
       "components": [
         "text",
         "image",
-        "title",
-        "introduction",
-        "hero",
-        "columns",
-        "columns-teaser",
-        "cards"
+        "columns-teaser"
       ]
     }
   ]

@@ -35,14 +35,13 @@
         {
           "title": "Section",
           "id": "section",
-          "model": "section",
-          "filter": "section",
           "plugins": {
             "da": {
-              "name": "section",
-              "type": "container"
+              "unsafeHTML": "<div></div>"
             }
-          }
+          },
+          "filter": "section",
+          "model": "section"
         }
       ]
     },
@@ -51,68 +50,15 @@
       "id": "blocks",
       "components": [
         {
-          "title": "Title",
-          "id": "title",
-          "model": "title",
-          "plugins": {
-            "da": {
-              "name": "title",
-              "type": "block"
-            }
-          }
-        },
-        {
-          "title": "Introduction",
-          "id": "introduction",
-          "model": "introduction",
-          "plugins": {
-            "da": {
-              "name": "introduction",
-              "type": "block"
-            }
-          }
-        },
-        {
-          "title": "Hero",
-          "id": "hero",
-          "model": "hero",
-          "plugins": {
-            "da": {
-              "name": "hero",
-              "type": "block"
-            }
-          }
-        },
-        {
-          "title": "Columns",
-          "id": "columns",
-          "model": "columns",
-          "plugins": {
-            "da": {
-              "name": "columns",
-              "type": "block"
-            }
-          }
-        },
-        {
           "title": "Columns Teaser",
           "id": "columns-teaser",
           "model": "columns-teaser",
+          "filter": "columns-teaser",
           "plugins": {
             "da": {
               "name": "columns-teaser",
-              "type": "block"
-            }
-          }
-        },
-        {
-          "title": "Cards",
-          "id": "cards",
-          "model": "cards",
-          "plugins": {
-            "da": {
-              "name": "cards",
-              "type": "block"
+              "rows": 1,
+              "columns": 2
             }
           }
         }
