@@ -2,7 +2,7 @@
   "groups": [
     {
       "title": "Default Content",
-      "id": "default-content",
+      "id": "default",
       "components": [
         {
           "title": "Text",
@@ -22,7 +22,13 @@
           "plugins": {
             "da": {
               "name": "image",
-              "type": "image"
+              "type": "image",
+              "fields": [
+                {
+                  "name": "imageAlt",
+                  "selector": "img[alt]"
+                }
+              ]
             }
           }
         }

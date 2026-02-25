@@ -1,12 +1,16 @@
-{
-  "filters": [
-    {
-      "id": "section",
-      "components": [
-        "text",
-        "image",
-        "columns-teaser"
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": "main",
+    "components": [
+      "section"
+    ]
+  },
+  {
+    "id": "section",
+    "components": [
+      "text",
+      "image",
+      "columns-teaser"
+    ]
+  }
+]
