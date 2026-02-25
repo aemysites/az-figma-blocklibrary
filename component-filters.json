@@ -1,0 +1,15 @@
+{
+  "filters": [
+    {
+      "id": "section",
+      "components": [
+        "title",
+        "introduction",
+        "hero",
+        "columns",
+        "columns-teaser",
+        "cards"
+      ]
+    }
+  ]
+}
