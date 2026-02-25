@@ -8,8 +8,8 @@
       "plugins": {
         "da": {
           "name": "columns-teaser",
-          "rows": 2,
-          "columns": 1,
+          "rows": 1,
+          "columns": 2,
           "fields": [
             {
               "name": "content",
