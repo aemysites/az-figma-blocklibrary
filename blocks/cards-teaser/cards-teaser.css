@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--cards-teaser-columns-min), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(var(--cards-teaser-columns-min), 1fr));
   gap: var(--cards-teaser-gap);
 }
 
