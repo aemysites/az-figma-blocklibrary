@@ -62,9 +62,7 @@
           "filter": "title",
           "plugins": {
             "da": {
-              "name": "title",
-              "rows": 1,
-              "columns": 1
+              "name": "title"
             }
           }
         },
@@ -75,9 +73,7 @@
           "filter": "introduction",
           "plugins": {
             "da": {
-              "name": "introduction",
-              "rows": 1,
-              "columns": 1
+              "name": "introduction"
             }
           }
         },
