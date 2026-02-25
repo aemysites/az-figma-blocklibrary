@@ -186,4 +186,9 @@ async function loadPage() {
   loadDelayed();
 }
 
+// Check if running in Universal Editor mode and load UE-specific instrumentation
+if (/\.(stage-ue|ue)\.da\.live$/.test(window.location.hostname)) {
+  await import(`${window.hlx.codeBasePath}/ue/scripts/ue.js`).then(({ default: ue }) => ue());
+}
+
 loadPage();
