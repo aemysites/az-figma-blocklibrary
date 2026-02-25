@@ -63,12 +63,12 @@
           "plugins": {
             "da": {
               "name": "title",
-              "rows": 2,
+              "rows": 1,
               "columns": 1,
               "fields": [
                 {
                   "name": "content",
-                  "selector": "div>div"
+                  "selector": "div"
                 }
               ]
             }
@@ -82,12 +82,12 @@
           "plugins": {
             "da": {
               "name": "introduction",
-              "rows": 2,
+              "rows": 1,
               "columns": 1,
               "fields": [
                 {
                   "name": "content",
-                  "selector": "div>div"
+                  "selector": "div"
                 }
               ]
             }
