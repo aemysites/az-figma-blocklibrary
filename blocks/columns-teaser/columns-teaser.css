@@ -38,6 +38,7 @@
 
 .columns-teaser > div > .columns-teaser-img-col img {
   display: block;
+  border-radius: var(--columns-teaser-image-border-radius);
 }
 
 /* Typography - Headings */
@@ -104,6 +105,30 @@
   background-color: var(--columns-teaser-button-hover-background);
   border-color: var(--columns-teaser-button-hover-border-color);
   color: var(--columns-teaser-button-hover-color);
+}
+
+/* Dark section - filled buttons */
+.section.dark .columns-teaser a.button:any-link,
+.section.dark .columns-teaser button.button {
+  color: #fff;
+  background-color: #d0006f;
+}
+
+.section.dark .columns-teaser a.button:hover,
+.section.dark .columns-teaser a.button:focus-visible,
+.section.dark .columns-teaser button.button:hover,
+.section.dark .columns-teaser button.button:focus-visible {
+  background-color: #a30058;
+}
+
+.section.dark .columns-teaser h1,
+.section.dark .columns-teaser h2,
+.section.dark .columns-teaser h3,
+.section.dark .columns-teaser h4,
+.section.dark .columns-teaser h5,
+.section.dark .columns-teaser h6,
+.section.dark .columns-teaser p {
+  color: #fff;
 }
 
 /* Desktop layout */

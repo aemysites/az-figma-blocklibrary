@@ -38,7 +38,7 @@
   --columns-teaser-body-color: #363b3b;
   --columns-teaser-body-margin-bottom: 0;
 
-  /* ===== TYPOGRAPHY - BUTTON ===== */
+  /* ===== TYPOGRAPHY - BUTTON (Ghost/Outlined style) ===== */
   --columns-teaser-button-font-family: 'Inter', sans-serif;
   --columns-teaser-button-font-size: 16px;
   --columns-teaser-button-font-weight: 600;
@@ -46,9 +46,9 @@
   --columns-teaser-button-line-height: 24px;
   --columns-teaser-button-letter-spacing: 0;
   --columns-teaser-button-text-transform: none;
-  --columns-teaser-button-color: #fff;
-  --columns-teaser-button-background: #d0006f;
-  --columns-teaser-button-border-width: 1px;
+  --columns-teaser-button-color: #d0006f;
+  --columns-teaser-button-background: transparent;
+  --columns-teaser-button-border-width: 2px;
   --columns-teaser-button-border-style: solid;
   --columns-teaser-button-border-color: #d0006f;
   --columns-teaser-button-border-radius: 4px;
@@ -57,8 +57,8 @@
   --columns-teaser-button-min-height: 42px;
 
   /* ===== HOVER STATES ===== */
-  --columns-teaser-button-hover-background: #a30058;
-  --columns-teaser-button-hover-border-color: #a30058;
+  --columns-teaser-button-hover-background: #d0006f;
+  --columns-teaser-button-hover-border-color: #d0006f;
   --columns-teaser-button-hover-color: #fff;
 
   /* ===== BORDERS & RADIUS ===== */
@@ -73,6 +73,7 @@
   /* ===== SPACING BETWEEN ELEMENTS ===== */
   --columns-teaser-content-gap: 16px;
   --columns-teaser-image-margin-bottom: 0;
+  --columns-teaser-image-border-radius: 8px;
 
   /* ===== TRANSITIONS ===== */
   --columns-teaser-transition-duration: 200ms;

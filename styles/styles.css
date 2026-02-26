@@ -323,3 +323,20 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+main .section.dark {
+  background-color: #2e3232;
+  color: #fff;
+  margin: 0;
+  padding: 40px 0;
+}
+
+main .section.dark h1,
+main .section.dark h2,
+main .section.dark h3,
+main .section.dark h4,
+main .section.dark h5,
+main .section.dark h6,
+main .section.dark p {
+  color: #fff;
+}
