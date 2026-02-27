@@ -3,15 +3,18 @@
 
 /* cards-teaser block styles */
 
-/* Section wrapper styling */
-main > .section > .cards-teaser-wrapper {
+/* Section container - full width background */
+main > .section.cards-teaser-container {
   background-color: var(--cards-teaser-background);
-  padding: var(--cards-teaser-padding-top) 24px var(--cards-teaser-padding-bottom);
+  margin: 0;
+  padding: var(--cards-teaser-padding-top) 0 var(--cards-teaser-padding-bottom);
 }
 
-.cards-teaser-wrapper .cards-teaser {
+/* Section wrapper styling */
+main > .section > .cards-teaser-wrapper {
   max-width: var(--cards-teaser-max-width);
   margin: 0 auto;
+  padding: 0 24px;
 }
 
 .cards-teaser > ul {
