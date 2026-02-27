@@ -3,6 +3,17 @@
 
 /* cards-teaser block styles */
 
+/* Section wrapper styling */
+main > .section > .cards-teaser-wrapper {
+  background-color: var(--cards-teaser-background);
+  padding: var(--cards-teaser-padding-top) 24px var(--cards-teaser-padding-bottom);
+}
+
+.cards-teaser-wrapper .cards-teaser {
+  max-width: var(--cards-teaser-max-width);
+  margin: 0 auto;
+}
+
 .cards-teaser > ul {
   list-style: none;
   margin: 0;
@@ -31,6 +42,7 @@
   width: 100%;
   aspect-ratio: var(--cards-teaser-image-aspect-ratio);
   object-fit: cover;
+  object-position: center top;
 }
 
 .cards-teaser .cards-teaser-card-body {

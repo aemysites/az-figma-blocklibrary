@@ -16,5 +16,15 @@ export default function decorate(block) {
     const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]);
     img.closest('picture').replaceWith(optimizedPic);
   });
+
+  // Decorate standalone links as buttons
+  ul.querySelectorAll('.cards-teaser-card-body p').forEach((p) => {
+    const links = p.querySelectorAll('a');
+    if (links.length === 1 && p.textContent.trim() === links[0].textContent.trim()) {
+      links[0].classList.add('button');
+      p.classList.add('button-wrapper');
+    }
+  });
+
   block.replaceChildren(ul);
 }

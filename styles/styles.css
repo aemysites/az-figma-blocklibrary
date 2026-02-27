@@ -340,3 +340,8 @@ main .section.dark h6,
 main .section.dark p {
   color: #fff;
 }
+
+/* hide metadata block */
+main .metadata {
+  display: none;
+}

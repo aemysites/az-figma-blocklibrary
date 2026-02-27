@@ -2,6 +2,7 @@
 
 /* ALL values extracted from cards-teaser-measurements.txt */
 
+.cards-teaser-wrapper,
 .cards-teaser {
   /* ===== LAYOUT & DIMENSIONS ===== */
   --cards-teaser-max-width: 1180px;
@@ -14,7 +15,7 @@
   --cards-teaser-columns: 4;
 
   /* ===== CONTAINER COLORS ===== */
-  --cards-teaser-background: #fff;
+  --cards-teaser-background: #ebefee;
 
   /* ===== CARD PROPERTIES ===== */
   --cards-teaser-card-background: #fff;
