@@ -1,6 +1,69 @@
 // eslint-disable-next-line import/no-unresolved
 import { toClassName, decorateBlock, loadBlock } from '../../scripts/aem.js';
 
+/**
+ * Detects repeating card patterns (picture-only p followed by body paragraphs)
+ * in flat panel content and reconstructs them into a cards-teaser block.
+ * Needed because the AEM backend flattens nested block divs in table cells.
+ */
+function assembleCards(panel) {
+  const content = panel.lastElementChild;
+  if (!content) return null;
+
+  const children = [...content.children];
+  const cards = [];
+  let currentCard = null;
+  const beforeCards = [];
+  const afterCards = [];
+  let foundFirstCard = false;
+  let finishedCards = false;
+
+  children.forEach((el) => {
+    const isPictureOnly = el.tagName === 'P'
+      && el.children.length === 1
+      && el.firstElementChild
+      && el.firstElementChild.tagName === 'PICTURE';
+
+    if (isPictureOnly && !finishedCards) {
+      if (currentCard) cards.push(currentCard);
+      foundFirstCard = true;
+      currentCard = { image: el, body: [] };
+    } else if (currentCard && el.tagName === 'P') {
+      currentCard.body.push(el);
+    } else if (foundFirstCard) {
+      if (currentCard) {
+        cards.push(currentCard);
+        currentCard = null;
+      }
+      finishedCards = true;
+      afterCards.push(el);
+    } else {
+      beforeCards.push(el);
+    }
+  });
+  if (currentCard) cards.push(currentCard);
+
+  // Only assemble cards if there's a heading before the card pattern,
+  // to avoid converting icon-list content (e.g. stage icons) into cards.
+  const hasHeadingBefore = beforeCards.some((el) => /^H[1-6]$/.test(el.tagName));
+  if (cards.length < 2 || !hasHeadingBefore) return null;
+
+  const cardsBlock = document.createElement('div');
+  cardsBlock.className = 'cards-teaser';
+  cards.forEach((card) => {
+    const row = document.createElement('div');
+    const imageDiv = document.createElement('div');
+    imageDiv.append(card.image.querySelector('picture'));
+    const bodyDiv = document.createElement('div');
+    card.body.forEach((el) => bodyDiv.append(el));
+    row.append(imageDiv, bodyDiv);
+    cardsBlock.append(row);
+  });
+
+  content.replaceChildren(...beforeCards, cardsBlock, ...afterCards);
+  return cardsBlock;
+}
+
 export default async function decorate(block) {
   // build tablist
   const tablist = document.createElement('div');
@@ -51,6 +114,9 @@ export default async function decorate(block) {
   const divider = document.createElement('div');
   divider.className = 'tabs-large-divider';
   tablist.after(divider);
+
+  // assemble card patterns from flat content into cards-teaser blocks
+  block.querySelectorAll('.tabs-large-panel').forEach((panel) => assembleCards(panel));
 
   // decorate and load nested blocks within tab panels
   const nestedBlocks = [...block.querySelectorAll('.tabs-large-panel div[class]')];
