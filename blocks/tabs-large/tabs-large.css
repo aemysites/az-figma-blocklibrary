@@ -60,3 +60,14 @@
 .tabs-large .tabs-large-panel[aria-hidden='true'] {
   display: none;
 }
+
+.tabs-large .tabs-large-panel img {
+  max-width: 80px;
+  height: auto;
+}
+
+/* Allow nested blocks to control their own image sizing */
+.tabs-large .tabs-large-panel .block img {
+  max-width: none;
+  height: initial;
+}

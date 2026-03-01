@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-unresolved
-import { toClassName } from '../../scripts/aem.js';
+import { toClassName, decorateBlock, loadBlock } from '../../scripts/aem.js';
 
 export default async function decorate(block) {
   // build tablist
@@ -51,4 +51,18 @@ export default async function decorate(block) {
   const divider = document.createElement('div');
   divider.className = 'tabs-large-divider';
   tablist.after(divider);
+
+  // decorate and load nested blocks within tab panels
+  const nestedBlocks = [...block.querySelectorAll('.tabs-large-panel div[class]')];
+  await nestedBlocks.reduce(async (promise, nestedBlock) => {
+    await promise;
+    const blockName = nestedBlock.classList[0];
+    if (blockName && !blockName.startsWith('tabs-large')) {
+      const wrapper = document.createElement('div');
+      nestedBlock.before(wrapper);
+      wrapper.append(nestedBlock);
+      decorateBlock(nestedBlock);
+      await loadBlock(nestedBlock);
+    }
+  }, Promise.resolve());
 }
