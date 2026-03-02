@@ -19,10 +19,10 @@
   /* ===== PLAY BUTTON ===== */
   --embed-play-width: 84px;
   --embed-play-height: 62px;
-  --embed-play-background: rgba(0, 0, 0, 0.5);
+  --embed-play-background: rgb(0 0 0 / 50%);
   --embed-play-border-radius: 4px;
   --embed-play-icon-color: #fff;
-  --embed-play-hover-background: rgba(0, 0, 0, 0.7);
+  --embed-play-hover-background: rgb(0 0 0 / 70%);
 
   /* ===== TRANSITIONS ===== */
   --embed-transition-duration: 200ms;

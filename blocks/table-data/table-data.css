@@ -1,4 +1,5 @@
 /* Table Data Block - Styled Data Table */
+
 /* Design Source: Figma One-AZ-3.1 Market Master - Node 3446:31596 */
 
 /* Component Tokens */
@@ -8,7 +9,7 @@
   --table-data-header-accent-bg: #f6cee7;
 
   /* Row Colors */
-  --table-data-row-even-bg: #ffffff;
+  --table-data-row-even-bg: #fff;
   --table-data-row-odd-bg: #ebefee;
   --table-data-row-accent-bg: #f6cee7;
 
@@ -102,7 +103,7 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 599px) {
+@media (width <= 599px) {
   .table-data.block table th,
   .table-data.block table td {
     padding: calc(var(--table-data-cell-padding) / 2);
