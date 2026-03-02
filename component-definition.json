@@ -73,12 +73,12 @@
           "model": "card-teaser",
           "plugins": {
             "da": {
+              "name": "card-teaser",
               "rows": 1,
               "columns": 2,
               "fields": [
                 {
                   "name": "image",
-                  "type": "image",
                   "selector": "div:nth-child(1)>picture>img[src]"
                 },
                 {
