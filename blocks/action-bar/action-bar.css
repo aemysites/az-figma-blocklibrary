@@ -1,5 +1,5 @@
 /* Import component-specific tokens */
-@import './action-bar-tokens.css';
+@import url('./action-bar-tokens.css');
 
 /* Action Bar block styles */
 .action-bar {
@@ -71,14 +71,14 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 900px) {
+@media (width <= 900px) {
   .action-bar .action-bar-meta {
     font-size: 18px;
     line-height: 24px;
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .action-bar {
     padding: 16px 0;
   }
