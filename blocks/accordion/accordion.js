@@ -22,4 +22,17 @@ export default function decorate(block) {
     details.append(summary, body);
     row.replaceWith(details);
   });
+
+  // Auto-close: when one accordion opens, close others
+  block.querySelectorAll('details').forEach((details) => {
+    details.addEventListener('toggle', () => {
+      if (details.open) {
+        block.querySelectorAll('details').forEach((other) => {
+          if (other !== details && other.open) {
+            other.open = false;
+          }
+        });
+      }
+    });
+  });
 }
