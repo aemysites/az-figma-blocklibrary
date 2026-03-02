@@ -78,6 +78,7 @@
               "fields": [
                 {
                   "name": "image",
+                  "type": "image",
                   "selector": "div:nth-child(1)>picture>img[src]"
                 },
                 {
