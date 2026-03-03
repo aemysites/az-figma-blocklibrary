@@ -1,0 +1,52 @@
+/* blocks/chip-group/chip-group-tokens.css */
+
+/* All values extracted from chip-group-measurements.txt */
+
+.chip-group {
+  /* ===== LAYOUT & DIMENSIONS ===== */
+  --chip-group-max-width: 1180px;
+  --chip-group-padding: 20px;
+  --chip-group-row-gap: 8px;
+  --chip-group-chip-gap: 10px;
+
+  /* ===== CONTAINER COLORS ===== */
+  --chip-group-background: #fff;
+
+  /* ===== CHIP DEFAULT STATE ===== */
+  --chip-group-chip-padding-y: 5px;
+  --chip-group-chip-padding-x: 16px;
+  --chip-group-chip-background: #fff;
+  --chip-group-chip-border-width: 1px;
+  --chip-group-chip-border-style: solid;
+  --chip-group-chip-border-color: #b1b9b9;
+  --chip-group-chip-border-radius: 9999px;
+  --chip-group-chip-internal-gap: 8px;
+
+  /* ===== CHIP ACTIVE STATE ===== */
+  --chip-group-chip-active-background: #d0006f;
+  --chip-group-chip-active-text-color: #fff;
+  --chip-group-chip-active-padding-right: 36px;
+  --chip-group-chip-active-border-width: 0;
+  --chip-group-chip-close-icon-size: 24px;
+
+  /* ===== TYPOGRAPHY ===== */
+  --chip-group-font-family: 'Inter', sans-serif;
+  --chip-group-font-size: 12px;
+  --chip-group-font-weight: 400;
+  --chip-group-line-height: 18px;
+  --chip-group-letter-spacing: normal;
+  --chip-group-text-transform: none;
+  --chip-group-font-style: normal;
+  --chip-group-text-color: #363b3b;
+
+  /* ===== HOVER STATES ===== */
+  --chip-group-chip-hover-background: #f5f5f5;
+  --chip-group-chip-hover-border-color: #8a9393;
+
+  /* ===== TRANSITIONS ===== */
+  --chip-group-transition-duration: 200ms;
+  --chip-group-transition-timing: ease;
+
+  /* ===== SHADOWS ===== */
+  --chip-group-chip-shadow: none;
+}

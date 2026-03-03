@@ -1,0 +1,10 @@
+{
+  "projectType": "da",
+  "owner": "aemysites",
+  "repo": "az-figma-blocklibrary",
+  "branch": "main",
+  "mountpoint": "https://admin.da.live/source/aemysites/az-figma-blocklibrary/main",
+  "libraryUrl": null,
+  "previewUrl": "https://main--az-figma-blocklibrary--aemysites.aem.page",
+  "liveUrl": "https://main--az-figma-blocklibrary--aemysites.aem.live"
+}

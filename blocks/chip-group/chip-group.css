@@ -1,0 +1,86 @@
+/* Import component-specific tokens */
+@import url('./chip-group-tokens.css');
+
+/* chip-group block styles */
+
+.chip-group {
+  display: flex;
+  justify-content: center;
+  padding: var(--chip-group-padding);
+  background-color: var(--chip-group-background);
+}
+
+.chip-group .chip-group-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--chip-group-chip-gap);
+  row-gap: var(--chip-group-row-gap);
+  max-width: var(--chip-group-max-width);
+  width: 100%;
+}
+
+.chip-group .chip-group-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--chip-group-chip-internal-gap);
+  padding: var(--chip-group-chip-padding-y) var(--chip-group-chip-padding-x);
+  background-color: var(--chip-group-chip-background);
+  border-width: var(--chip-group-chip-border-width);
+  border-style: var(--chip-group-chip-border-style);
+  border-color: var(--chip-group-chip-border-color);
+  border-radius: var(--chip-group-chip-border-radius);
+  font-family: var(--chip-group-font-family);
+  font-size: var(--chip-group-font-size);
+  font-weight: var(--chip-group-font-weight);
+  font-style: var(--chip-group-font-style);
+  line-height: var(--chip-group-line-height);
+  letter-spacing: var(--chip-group-letter-spacing);
+  text-transform: var(--chip-group-text-transform);
+  color: var(--chip-group-text-color);
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: var(--chip-group-chip-shadow);
+  transition: background-color var(--chip-group-transition-duration) var(--chip-group-transition-timing),
+    border-color var(--chip-group-transition-duration) var(--chip-group-transition-timing);
+}
+
+.chip-group .chip-group-chip:hover {
+  background-color: var(--chip-group-chip-hover-background);
+  border-color: var(--chip-group-chip-hover-border-color);
+}
+
+.chip-group .chip-group-chip.chip-group-chip-active {
+  background-color: var(--chip-group-chip-active-background);
+  color: var(--chip-group-chip-active-text-color);
+  border-width: var(--chip-group-chip-active-border-width);
+  padding-right: var(--chip-group-chip-active-padding-right);
+  position: relative;
+}
+
+.chip-group .chip-group-chip.chip-group-chip-active:hover {
+  background-color: var(--chip-group-chip-active-background);
+  border-color: transparent;
+}
+
+.chip-group .chip-group-chip-label {
+  pointer-events: none;
+}
+
+.chip-group .chip-group-chip-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--chip-group-chip-close-icon-size);
+  height: var(--chip-group-chip-close-icon-size);
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.chip-group .chip-group-chip-close svg {
+  width: 16px;
+  height: 16px;
+}

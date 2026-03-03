@@ -1,0 +1,20 @@
+{
+  "templates": [
+    {
+      "name": "indication-landing",
+      "urls": [
+        "https://www.mein-medcampus.de/copd"
+      ],
+      "description": "Indication landing page with intro text and article cards grid. Structure: intro section with heading + description, followed by cards-teaser section with article cards.",
+      "blocks": [
+        {
+          "name": "cards-teaser",
+          "instances": [
+            "section.articles-grid"
+          ],
+          "section": null
+        }
+      ]
+    }
+  ]
+}
