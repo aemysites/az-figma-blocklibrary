@@ -5,7 +5,7 @@
 .accordion {
   /* ===== LAYOUT & DIMENSIONS ===== */
   --accordion-max-width: 1180px;
-  --accordion-header-padding-top: 40px;
+  --accordion-header-padding-top: 20px;
   --accordion-header-padding-bottom: 20px;
   --accordion-header-padding-x: 0;
   --accordion-body-padding-y: 20px;
@@ -26,22 +26,22 @@
 
   /* ===== TYPOGRAPHY - TITLE ===== */
   --accordion-title-font-family: 'Lexia', serif;
-  --accordion-title-font-size: 36px;
+  --accordion-title-font-size: 22px;
   --accordion-title-font-weight: 400;
-  --accordion-title-line-height: 40px;
+  --accordion-title-line-height: 31px;
   --accordion-title-color: #830051;
 
   /* ===== TYPOGRAPHY - BODY ===== */
   --accordion-body-font-family: 'Inter', sans-serif;
   --accordion-body-font-size: 18px;
   --accordion-body-font-weight: 400;
-  --accordion-body-line-height: 28px;
+  --accordion-body-line-height: 28.8px;
   --accordion-body-color: #363b3b;
 
   /* ===== ICON ===== */
-  --accordion-icon-size: 20px;
+  --accordion-icon-size: 12px;
   --accordion-icon-color: #363b3b;
-  --accordion-icon-border-width: 2px;
+  --accordion-icon-border-width: 1.5px;
 
   /* ===== TRANSITIONS ===== */
   --accordion-transition-duration: 200ms;

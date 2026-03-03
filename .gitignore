@@ -6,6 +6,9 @@ node_modules/*
 helix-importer-ui
 .DS_Store
 *.bak
+*.jpeg
+*.jpg
+*.png
 .idea
 
 # Ensure these files are tracked

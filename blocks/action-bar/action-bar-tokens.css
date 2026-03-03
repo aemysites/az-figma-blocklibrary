@@ -1,4 +1,5 @@
 /* blocks/action-bar/action-bar-tokens.css */
+
 /* All values extracted from action-bar-measurements.txt */
 
 .action-bar {
@@ -30,7 +31,7 @@
   --action-bar-icon-color: #d0006f;
   --action-bar-icon-hover-color: #830051;
   --action-bar-icon-background: transparent;
-  --action-bar-icon-hover-background: rgba(208, 0, 111, 0.1);
+  --action-bar-icon-hover-background: rgb(208 0 111 / 10%);
   --action-bar-icon-border-radius: 50%;
 
   /* ===== TRANSITIONS ===== */

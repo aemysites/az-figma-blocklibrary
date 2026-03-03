@@ -10,12 +10,12 @@
 }
 
 .accordion details {
-  border: var(--accordion-border-width) var(--accordion-border-style) var(--accordion-border-color);
+  /* No wrapping border - border is on header only per Figma */
+  border: none;
 }
 
 .accordion details + details {
   margin-top: var(--accordion-item-spacing);
-  border-top: none;
 }
 
 .accordion details summary {
@@ -29,6 +29,7 @@
   cursor: pointer;
   list-style: none;
   transition: background-color var(--accordion-transition-duration) var(--accordion-transition-timing);
+  border-bottom: var(--accordion-border-width) var(--accordion-border-style) var(--accordion-border-color);
 }
 
 .accordion details summary::-webkit-details-marker {
@@ -37,11 +38,13 @@
 
 .accordion details summary:hover,
 .accordion details summary:focus {
-  background: var(--accordion-header-hover-background);
+  /* No background change on hover per Figma design */
+  background: var(--accordion-header-background);
 }
 
 .accordion details[open] summary {
-  background: var(--accordion-header-hover-background);
+  /* No background change when open per Figma design */
+  background: var(--accordion-header-background);
 }
 
 /* Title styling */
@@ -54,27 +57,28 @@
   margin: 0;
 }
 
-/* Chevron icon */
+/* Chevron icon - SVG matching Figma design */
 .accordion details summary::after {
   content: '';
   flex-shrink: 0;
-  width: var(--accordion-icon-size);
-  height: var(--accordion-icon-size);
-  border: var(--accordion-icon-border-width) solid var(--accordion-icon-color);
-  border-width: var(--accordion-icon-border-width) var(--accordion-icon-border-width) 0 0;
-  transform: rotate(135deg);
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M5 7.5L10 12.5L15 7.5' stroke='%23363b3b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   transition: transform var(--accordion-transition-duration) var(--accordion-transition-timing);
 }
 
 .accordion details[open] summary::after {
-  transform: rotate(-45deg);
+  transform: rotate(180deg);
 }
 
 /* Body styling */
 .accordion details .accordion-item-body {
   padding: var(--accordion-body-padding-y) var(--accordion-body-padding-x);
   background: var(--accordion-body-background);
-  border-top: var(--accordion-border-width) var(--accordion-border-style) var(--accordion-border-color);
+  /* No top border - header has bottom border per Figma */
 }
 
 .accordion details .accordion-item-body p {
