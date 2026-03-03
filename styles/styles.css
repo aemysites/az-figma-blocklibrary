@@ -31,9 +31,11 @@
   --light-color-cool: #ebefee;
   --light-color-blue: #c9dded;
   --dark-color: #2e3232;
-  --text-color: #1a1a1a;
-  --text-color-secondary: #3d3d3d;
+  --text-color: #363b3b;
+  --text-color-strong: #1a1a1a;
   --text-color-muted: #777b7b;
+  --heading-color: #4f0031;
+  --heading-color-primary: #830051;
   --link-color: #005589;
   --link-hover-color: #003864;
   --border-color: #d6d6d6;
@@ -131,12 +133,14 @@ h6 {
   font-family: var(--heading-font-family);
   font-weight: 400;
   line-height: 1.1;
+  color: var(--heading-color);
   scroll-margin: 40px;
 }
 
 h1 {
   font-size: var(--heading-font-size-xxl);
   line-height: 1.07;
+  color: var(--heading-color-primary);
 }
 
 h2 {
