@@ -78,6 +78,7 @@
 .accordion details .accordion-item-body {
   padding: var(--accordion-body-padding-y) var(--accordion-body-padding-x);
   background: var(--accordion-body-background);
+
   /* No top border - header has bottom border per Figma */
 }
 
