@@ -1,0 +1,61 @@
+VISUAL MEASUREMENT CHECKLIST FOR tags
+================================================
+Extracted from Figma node: 3446:32169 (Chip Group)
+FileKey: 5VZZ0PAANAvN8MKBCmHpcN
+
+LAYOUT & DIMENSIONS
+☑ Container width: 1440px (source: instance width="1440")
+☑ Container height: auto / 182px (source: instance height="182", content-driven)
+☑ Container padding: top 20px right 20px bottom 20px left 20px (source: p-[20px] on Container)
+☑ Container max-width (content): 1180px (source: max-w-[1180px] on Container Content, variable site-max-width=1180)
+☑ Container background: #ffffff (source: bg-[var(--Background-Supporting-2,#ffffff)])
+☑ Flex direction (container content): column (source: flex-col on Container Content)
+☑ Row gap (container content): 8px (source: gap-[8px] on Container Content)
+☑ Flex direction (chip row): row (source: flex-row on Slot: Chip Row)
+☑ Flex wrap: wrap (source: flex-wrap on Slot: Chip Row)
+☑ Justify content (chip row): center (source: justify-center on Slot: Chip Row)
+☑ Gap between chips: 10px (source: gap-[10px] on Slot: Chip Row)
+
+CHIP DEFAULT STATE
+☑ Chip background: #ffffff (source: bg-[#ffffff] on .Chip Row / Chip)
+☑ Chip border: 1px solid #b1b9b9 (source: border-[1px] border-solid border-[#b1b9b9])
+☑ Chip border-radius: 9999px / full (source: rounded-full on chip)
+☑ Chip padding: top 5px right 16px bottom 5px left 16px (source: px-[16px] py-[5px])
+☑ Chip internal gap: 8px (source: gap-[8px])
+☑ Chip text font-family: Inter (source: font-['Inter',sans-serif], variable Font-Family/Inter)
+☑ Chip text font-size: 12px (source: text-[12px], variable Tokens/Font Size/12)
+☑ Chip text font-weight: 400 (source: font-normal, variable Weight | Style/400)
+☑ Chip text line-height: 18px (source: leading-[18px], variable Tokens/Line Height/18)
+☑ Chip text color: #363b3b (source: text-[color:var(--Text-Body-1,#363b3b)], variable Color/363B3B)
+
+CHIP ACTIVE/SELECTED STATE
+☑ Active chip background: #d0006f (source: variable Color/D0006F, screenshot shows magenta)
+☑ Active chip text color: #ffffff (source: text-[#ffffff] on active chip text node)
+☑ Active chip padding: top 5px right 36px bottom 5px left 16px (source: pt-[5px] pr-[36px] pb-[5px] pl-[16px])
+☑ Active chip border: none visible (source: no border classes on active chip variant)
+☑ Active chip close icon size: 24px x 24px (source: w-[24px] h-[24px] on Frame 1126)
+
+TYPOGRAPHY
+☑ Font-family: Inter, sans-serif (source: font-['Inter',sans-serif])
+☑ Font-size: 12px (source: text-[12px])
+☑ Font-weight: 400 / normal (source: font-normal)
+☑ Line-height: 18px (source: leading-[18px])
+☑ Letter-spacing: normal (source: no letter-spacing class present)
+☑ Text-transform: none (source: no text-transform class present)
+☑ Font-style: normal (source: no italic class present)
+
+BORDERS & RADIUS
+☑ Default chip border-width: 1px (source: border-[1px])
+☑ Default chip border-style: solid (source: border-solid)
+☑ Default chip border-color: #b1b9b9 (source: border-[#b1b9b9])
+☑ Default chip border-radius: 9999px (source: rounded-full)
+☑ Active chip border-width: 0px (source: no border classes on active state)
+☑ Active chip border-radius: 9999px (source: rounded-full)
+
+SHADOWS
+☑ Box-shadow: none (source: no shadow classes in any chip variant)
+
+EFFECTS & TRANSITIONS
+☑ Hover transform: none specified (source: no hover states in Figma static)
+☑ Transition: none specified (source: Figma static design)
+☑ Cursor: pointer (implied for interactive chips)
