@@ -1,0 +1,76 @@
+/* Import component-specific tokens */
+@import url('./tags-tokens.css');
+
+/* tags block styles */
+
+.tags {
+  display: flex;
+  justify-content: center;
+  padding: var(--tags-container-padding);
+  background: var(--tags-background);
+}
+
+.tags .tags-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: var(--tags-chip-row-justify);
+  gap: var(--tags-chip-row-gap);
+  max-width: var(--tags-content-max-width);
+  width: 100%;
+}
+
+.tags .tags-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--tags-chip-gap);
+  padding: var(--tags-chip-padding-y) var(--tags-chip-padding-x);
+  background: var(--tags-chip-background);
+  border: var(--tags-chip-border-width) var(--tags-chip-border-style) var(--tags-chip-border-color);
+  border-radius: var(--tags-chip-border-radius);
+  font-family: var(--tags-font-family);
+  font-size: var(--tags-font-size);
+  font-weight: var(--tags-font-weight);
+  font-style: var(--tags-font-style);
+  line-height: var(--tags-line-height);
+  letter-spacing: var(--tags-letter-spacing);
+  text-transform: var(--tags-text-transform);
+  color: var(--tags-text-color);
+  cursor: pointer;
+  transition: background var(--tags-transition-duration) var(--tags-transition-timing),
+    border-color var(--tags-transition-duration) var(--tags-transition-timing);
+  box-shadow: var(--tags-chip-shadow);
+  white-space: nowrap;
+}
+
+.tags .tags-chip:hover {
+  background: var(--tags-chip-hover-background);
+  border-color: var(--tags-chip-hover-border-color);
+}
+
+.tags .tags-chip.tags-chip-active {
+  background: var(--tags-chip-active-background);
+  color: var(--tags-chip-active-text-color);
+  border: var(--tags-chip-active-border-width) solid transparent;
+  padding-right: var(--tags-chip-active-padding-right);
+  position: relative;
+}
+
+.tags .tags-chip.tags-chip-active:hover {
+  background: var(--tags-chip-active-hover-background);
+}
+
+.tags .tags-chip-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--tags-chip-active-icon-size);
+  height: var(--tags-chip-active-icon-size);
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  line-height: 1;
+  color: var(--tags-chip-active-text-color);
+}

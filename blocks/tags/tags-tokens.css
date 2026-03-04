@@ -1,0 +1,56 @@
+/* blocks/tags/tags-tokens.css */
+
+/* ALL values extracted from tags-measurements.txt */
+
+/* Figma node: 3446:32169 (Chip Group) */
+
+.tags {
+  /* ===== LAYOUT & DIMENSIONS ===== */
+  --tags-container-padding: 20px;
+  --tags-content-max-width: 1180px;
+  --tags-content-gap: 8px;
+  --tags-chip-row-gap: 10px;
+  --tags-chip-row-justify: center;
+
+  /* ===== CONTAINER COLORS ===== */
+  --tags-background: #fff;
+
+  /* ===== CHIP DEFAULT STATE ===== */
+  --tags-chip-background: #fff;
+  --tags-chip-border-width: 1px;
+  --tags-chip-border-style: solid;
+  --tags-chip-border-color: #b1b9b9;
+  --tags-chip-border-radius: 9999px;
+  --tags-chip-padding-y: 5px;
+  --tags-chip-padding-x: 16px;
+  --tags-chip-gap: 8px;
+
+  /* ===== CHIP ACTIVE STATE ===== */
+  --tags-chip-active-background: #d0006f;
+  --tags-chip-active-text-color: #fff;
+  --tags-chip-active-padding-right: 36px;
+  --tags-chip-active-border-width: 0;
+  --tags-chip-active-icon-size: 24px;
+
+  /* ===== TYPOGRAPHY ===== */
+  --tags-font-family: "Inter", sans-serif;
+  --tags-font-size: 12px;
+  --tags-font-weight: 400;
+  --tags-line-height: 18px;
+  --tags-letter-spacing: normal;
+  --tags-text-transform: none;
+  --tags-font-style: normal;
+  --tags-text-color: #363b3b;
+
+  /* ===== HOVER STATES ===== */
+  --tags-chip-hover-background: #f5f5f5;
+  --tags-chip-hover-border-color: #8a9494;
+  --tags-chip-active-hover-background: #b0005e;
+
+  /* ===== TRANSITIONS ===== */
+  --tags-transition-duration: 200ms;
+  --tags-transition-timing: ease;
+
+  /* ===== SHADOWS ===== */
+  --tags-chip-shadow: none;
+}
