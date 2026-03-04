@@ -1,0 +1,52 @@
+/* blocks/chip-group/chip-group-tokens.css */
+
+/* All values extracted from chip-group-measurements.txt */
+
+.chip-group {
+  /* ===== LAYOUT & DIMENSIONS ===== */
+  --chip-group-container-padding: 20px;
+  --chip-group-content-max-width: 1180px;
+  --chip-group-content-gap: 8px;
+  --chip-group-row-gap: 10px;
+
+  /* ===== CONTAINER COLORS ===== */
+  --chip-group-background: #fff;
+
+  /* ===== CHIP (DEFAULT STATE) ===== */
+  --chip-group-chip-padding-y: 5px;
+  --chip-group-chip-padding-x: 16px;
+  --chip-group-chip-border-radius: 9999px;
+  --chip-group-chip-background: #fff;
+  --chip-group-chip-border-width: 1px;
+  --chip-group-chip-border-style: solid;
+  --chip-group-chip-border-color: #b1b9b9;
+  --chip-group-chip-gap: 8px;
+
+  /* ===== CHIP TEXT (DEFAULT STATE) ===== */
+  --chip-group-text-font-family: "Inter", sans-serif;
+  --chip-group-text-font-size: 12px;
+  --chip-group-text-font-weight: 400;
+  --chip-group-text-line-height: 18px;
+  --chip-group-text-color: #363b3b;
+  --chip-group-text-font-style: normal;
+  --chip-group-text-letter-spacing: normal;
+  --chip-group-text-transform: none;
+
+  /* ===== CHIP (ACTIVE/SELECTED STATE) ===== */
+  --chip-group-active-background: #d0006f;
+  --chip-group-active-text-color: #fff;
+  --chip-group-active-border-width: 0;
+  --chip-group-active-padding-right: 36px;
+  --chip-group-active-padding-left: 16px;
+
+  /* ===== CLOSE ICON ===== */
+  --chip-group-close-icon-size: 24px;
+
+  /* ===== HOVER STATES ===== */
+  --chip-group-chip-hover-background: #f5f5f5;
+  --chip-group-chip-hover-border-color: #999;
+
+  /* ===== TRANSITIONS ===== */
+  --chip-group-transition-duration: 200ms;
+  --chip-group-transition-timing: ease;
+}

@@ -1,0 +1,87 @@
+/* Import component-specific tokens */
+@import url('chip-group-tokens.css');
+
+/* chip-group block styles */
+.chip-group {
+  display: flex;
+  justify-content: center;
+  padding: var(--chip-group-container-padding);
+  background: var(--chip-group-background);
+}
+
+.chip-group .chip-group-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--chip-group-row-gap);
+  max-width: var(--chip-group-content-max-width);
+  width: 100%;
+}
+
+.chip-group .chip-group-chip {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--chip-group-chip-gap);
+  padding: var(--chip-group-chip-padding-y) var(--chip-group-chip-padding-x);
+  border-radius: var(--chip-group-chip-border-radius);
+  background: var(--chip-group-chip-background);
+  border-width: var(--chip-group-chip-border-width);
+  border-style: var(--chip-group-chip-border-style);
+  border-color: var(--chip-group-chip-border-color);
+  cursor: pointer;
+  transition: background var(--chip-group-transition-duration) var(--chip-group-transition-timing),
+    border-color var(--chip-group-transition-duration) var(--chip-group-transition-timing);
+  font-family: var(--chip-group-text-font-family);
+  white-space: nowrap;
+}
+
+.chip-group .chip-group-chip:hover {
+  background: var(--chip-group-chip-hover-background);
+  border-color: var(--chip-group-chip-hover-border-color);
+}
+
+.chip-group .chip-group-label {
+  font-family: var(--chip-group-text-font-family);
+  font-size: var(--chip-group-text-font-size);
+  font-weight: var(--chip-group-text-font-weight);
+  font-style: var(--chip-group-text-font-style);
+  line-height: var(--chip-group-text-line-height);
+  letter-spacing: var(--chip-group-text-letter-spacing);
+  text-transform: var(--chip-group-text-transform);
+  color: var(--chip-group-text-color);
+}
+
+/* Active/selected chip state */
+.chip-group .chip-group-chip-active {
+  position: relative;
+  background: var(--chip-group-active-background);
+  border-color: var(--chip-group-active-background);
+  border-width: var(--chip-group-active-border-width);
+  padding-left: var(--chip-group-active-padding-left);
+  padding-right: var(--chip-group-active-padding-right);
+}
+
+.chip-group .chip-group-chip-active .chip-group-label {
+  color: var(--chip-group-active-text-color);
+}
+
+.chip-group .chip-group-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--chip-group-close-icon-size);
+  height: var(--chip-group-close-icon-size);
+  color: var(--chip-group-active-text-color);
+  font-size: 18px;
+  line-height: 1;
+  position: absolute;
+  right: 8px;
+}
+
+/* Mobile responsive adjustments */
+@media (width <= 599px) {
+  .chip-group .chip-group-row {
+    gap: 8px;
+  }
+}
