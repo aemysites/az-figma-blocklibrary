@@ -79,6 +79,11 @@
   right: 8px;
 }
 
+/* Filtered article list items */
+.chip-group-hidden {
+  display: none;
+}
+
 /* Mobile responsive adjustments */
 @media (width <= 599px) {
   .chip-group .chip-group-row {
