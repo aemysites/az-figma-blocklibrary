@@ -1,0 +1,60 @@
+VISUAL MEASUREMENT CHECKLIST FOR chip-group
+================================================
+Extracted from Figma node: 3446:32169
+File: 5VZZ0PAANAvN8MKBCmHpcN
+
+LAYOUT & DIMENSIONS
+☑ Container width: 1440px (source: root instance width="1440")
+☑ Container height: 182px (source: root instance height="182")
+☑ Container padding: top 20px right 20px bottom 20px left 20px (source: p-[20px] on Container)
+☑ Content max-width: 1180px (source: max-w-[1180px] on Container Content)
+☑ Content flex direction: column (source: flex-col on Container Content)
+☑ Content gap: 8px (source: gap-[8px] on Container Content)
+☑ Chip row flex direction: row (source: flex-row on Slot: Chip Row)
+☑ Chip row flex-wrap: wrap (source: flex-wrap on Slot: Chip Row)
+☑ Chip row justify-content: center (source: justify-center on Slot: Chip Row)
+☑ Chip row gap: 10px (source: gap-[10px] on Slot: Chip Row)
+
+CHIP (DEFAULT STATE)
+☑ Chip display: flex (source: flex on .Chip Row / Chip)
+☑ Chip justify-content: center (source: justify-center)
+☑ Chip align-items: center (source: items-center)
+☑ Chip internal gap: 8px (source: gap-[8px])
+☑ Chip padding: top 5px right 16px bottom 5px left 16px (source: px-[16px] py-[5px])
+☑ Chip border-radius: 9999px (source: rounded-full)
+☑ Chip background: #ffffff (source: bg-[#ffffff])
+☑ Chip border: 1px solid #b1b9b9 (source: border-[1px] border-solid border-[#b1b9b9])
+☑ Chip overflow: hidden (source: overflow-hidden)
+☑ Chip width: fit-content (source: w-fit)
+☑ Chip height: fit-content (source: h-fit)
+
+CHIP TEXT (DEFAULT STATE)
+☑ Text font-family: Inter, sans-serif (source: font-['Inter',sans-serif])
+☑ Text font-size: 12px (source: text-[12px])
+☑ Text font-weight: 400 (source: font-normal)
+☑ Text line-height: 18px (source: leading-[18px])
+☑ Text color: #363b3b (source: text-[color:var(--Text-Body-1,#363b3b)])
+☑ Text text-align: left (source: text-left)
+☑ Text letter-spacing: normal (source: no letter-spacing class present)
+☑ Text text-transform: none (source: no text-transform class present)
+☑ Text font-style: normal (source: no italic class present)
+
+CHIP (ACTIVE/SELECTED STATE)
+☑ Active chip background: #d0006f (source: Figma variable Color/D0006F and screenshot shows magenta/pink active chip)
+☑ Active chip text color: #ffffff (source: text-[#ffffff] on active chip text)
+☑ Active chip border: none (source: no border classes on active chip node I3446:32169;2653:13910;2510:4977;2653:13762)
+☑ Active chip right padding: 36px (source: pr-[36px] on active chip)
+☑ Active chip left padding: 16px (source: pl-[16px] on active chip)
+☑ Close icon size: 24x24px (source: w-[24px] h-[24px] on Frame 1126 img)
+☑ Close icon position: absolute, centered vertically (source: absolute top-1/2 -translate-y-1/2)
+
+CONTAINER COLORS
+☑ Container background: #ffffff (source: bg-[var(--Background-Supporting-2,#ffffff)])
+
+SHADOWS
+☑ Box-shadow: none (source: no shadow classes present on any element)
+
+EFFECTS & TRANSITIONS
+☑ Hover transform: none specified (source: no hover/transition classes in extracted data)
+☑ Transition duration: none specified (source: no transition classes in extracted data)
+☑ Opacity changes: none (source: no opacity classes present)
