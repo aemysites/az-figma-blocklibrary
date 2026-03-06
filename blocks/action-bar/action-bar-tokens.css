@@ -17,7 +17,7 @@
   --action-bar-background: transparent;
 
   /* ===== TYPOGRAPHY - BODY/META TEXT ===== */
-  --action-bar-text-font-family: 'Lexia', sans-serif;
+  --action-bar-text-font-family: var(--heading-font-family);
   --action-bar-text-font-size: 24px;
   --action-bar-text-font-weight: 400;
   --action-bar-text-font-style: normal;

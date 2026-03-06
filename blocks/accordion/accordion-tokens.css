@@ -25,14 +25,14 @@
   --accordion-item-spacing: 0;
 
   /* ===== TYPOGRAPHY - TITLE ===== */
-  --accordion-title-font-family: 'Lexia', serif;
+  --accordion-title-font-family: var(--heading-font-family);
   --accordion-title-font-size: 22px;
   --accordion-title-font-weight: 400;
   --accordion-title-line-height: 31px;
   --accordion-title-color: #830051;
 
   /* ===== TYPOGRAPHY - BODY ===== */
-  --accordion-body-font-family: 'Inter', sans-serif;
+  --accordion-body-font-family: var(--body-font-family);
   --accordion-body-font-size: 18px;
   --accordion-body-font-weight: 400;
   --accordion-body-line-height: 28.8px;

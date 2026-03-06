@@ -17,7 +17,7 @@
   --title-body-padding-bottom: 16px;
 
   /* ===== TYPOGRAPHY - HEADINGS ===== */
-  --title-heading-font-family: "Lexia VF", sans-serif;
+  --title-heading-font-family: var(--heading-font-family);
   --title-heading-font-size: 36px;
   --title-heading-font-weight: 400;
   --title-heading-font-style: normal;
@@ -27,7 +27,7 @@
   --title-heading-color: #830051;
 
   /* ===== TYPOGRAPHY - BODY ===== */
-  --title-body-font-family: "Inter", sans-serif;
+  --title-body-font-family: var(--body-font-family);
   --title-body-font-size: 16px;
   --title-body-font-weight: 400;
   --title-body-font-style: normal;

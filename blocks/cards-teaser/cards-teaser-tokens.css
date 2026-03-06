@@ -32,7 +32,7 @@
   --cards-teaser-content-gap: 16px;
 
   /* ===== TYPOGRAPHY - HEADINGS ===== */
-  --cards-teaser-heading-font-family: 'Lexia', serif;
+  --cards-teaser-heading-font-family: var(--heading-font-family);
   --cards-teaser-heading-font-size: 26px;
   --cards-teaser-heading-font-weight: 400;
   --cards-teaser-heading-font-style: normal;
@@ -42,7 +42,7 @@
   --cards-teaser-heading-color: #4f0031;
 
   /* ===== TYPOGRAPHY - BODY ===== */
-  --cards-teaser-body-font-family: 'Inter', sans-serif;
+  --cards-teaser-body-font-family: var(--body-font-family);
   --cards-teaser-body-font-size: 18px;
   --cards-teaser-body-font-weight: 400;
   --cards-teaser-body-font-style: normal;
@@ -51,7 +51,7 @@
   --cards-teaser-body-color: #363b3b;
 
   /* ===== TYPOGRAPHY - BUTTON ===== */
-  --cards-teaser-button-font-family: 'Inter', sans-serif;
+  --cards-teaser-button-font-family: var(--body-font-family);
   --cards-teaser-button-font-size: 16px;
   --cards-teaser-button-font-weight: 600;
   --cards-teaser-button-font-style: normal;

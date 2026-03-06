@@ -17,7 +17,7 @@
   --columns-teaser-background: #efefef;
 
   /* ===== TYPOGRAPHY - HEADINGS ===== */
-  --columns-teaser-heading-font-family: 'Lexia', sans-serif;
+  --columns-teaser-heading-font-family: var(--heading-font-family);
   --columns-teaser-heading-font-size: 26px;
   --columns-teaser-heading-font-weight: 400;
   --columns-teaser-heading-font-style: normal;
@@ -29,7 +29,7 @@
   --columns-teaser-heading-margin-bottom: 0;
 
   /* ===== TYPOGRAPHY - BODY ===== */
-  --columns-teaser-body-font-family: 'Inter', sans-serif;
+  --columns-teaser-body-font-family: var(--body-font-family);
   --columns-teaser-body-font-size: 18px;
   --columns-teaser-body-font-weight: 400;
   --columns-teaser-body-font-style: normal;
@@ -39,7 +39,7 @@
   --columns-teaser-body-margin-bottom: 0;
 
   /* ===== TYPOGRAPHY - BUTTON (Ghost/Outlined style) ===== */
-  --columns-teaser-button-font-family: 'Inter', sans-serif;
+  --columns-teaser-button-font-family: var(--body-font-family);
   --columns-teaser-button-font-size: 16px;
   --columns-teaser-button-font-weight: 600;
   --columns-teaser-button-font-style: normal;

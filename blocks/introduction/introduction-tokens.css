@@ -20,7 +20,7 @@
   --introduction-body-padding-bottom: 16px;
 
   /* ===== TYPOGRAPHY - HEADINGS ===== */
-  --introduction-heading-font-family: "Lexia VF", sans-serif;
+  --introduction-heading-font-family: var(--heading-font-family);
   --introduction-heading-font-size: 46px;
   --introduction-heading-font-weight: 400;
   --introduction-heading-font-style: normal;
@@ -30,7 +30,7 @@
   --introduction-heading-color: #830051;
 
   /* ===== TYPOGRAPHY - BODY ===== */
-  --introduction-body-font-family: "Inter", sans-serif;
+  --introduction-body-font-family: var(--body-font-family);
   --introduction-body-font-size: 16px;
   --introduction-body-font-weight: 400;
   --introduction-body-font-style: normal;

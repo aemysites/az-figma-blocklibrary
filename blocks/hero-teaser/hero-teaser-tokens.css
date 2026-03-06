@@ -18,7 +18,7 @@
   --hero-teaser-text-color: #fff;
 
   /* ===== TYPOGRAPHY - HEADING ===== */
-  --hero-teaser-heading-font-family: 'Lexia', serif;
+  --hero-teaser-heading-font-family: var(--heading-font-family);
   --hero-teaser-heading-font-size: 56px;
   --hero-teaser-heading-font-weight: 400;
   --hero-teaser-heading-font-style: normal;
@@ -28,7 +28,7 @@
   --hero-teaser-heading-color: #fff;
 
   /* ===== TYPOGRAPHY - BODY ===== */
-  --hero-teaser-body-font-family: 'Inter', sans-serif;
+  --hero-teaser-body-font-family: var(--body-font-family);
   --hero-teaser-body-font-size: 18px;
   --hero-teaser-body-font-weight: 400;
   --hero-teaser-body-font-style: normal;
@@ -38,7 +38,7 @@
   --hero-teaser-body-max-width: 577px;
 
   /* ===== BUTTON ===== */
-  --hero-teaser-button-font-family: 'Inter', sans-serif;
+  --hero-teaser-button-font-family: var(--body-font-family);
   --hero-teaser-button-font-size: 16px;
   --hero-teaser-button-font-weight: 600;
   --hero-teaser-button-font-style: normal;
