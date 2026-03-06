@@ -22,7 +22,7 @@
   --tabs-large-border-color: #d0006f;
 
   /* ===== TYPOGRAPHY ===== */
-  --tabs-large-font-family: 'Lexia', sans-serif;
+  --tabs-large-font-family: var(--heading-font-family);
   --tabs-large-font-size: 14px;
   --tabs-large-active-font-weight: 700;
   --tabs-large-inactive-font-weight: 400;

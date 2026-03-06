@@ -13,7 +13,7 @@
   --carousel-teaser-background: #fff;
 
   /* ===== TYPOGRAPHY - HEADINGS ===== */
-  --carousel-teaser-heading-font-family: 'Lexia', serif;
+  --carousel-teaser-heading-font-family: var(--heading-font-family);
   --carousel-teaser-heading-font-size: 26px;
   --carousel-teaser-heading-font-weight: 400;
   --carousel-teaser-heading-font-style: normal;
@@ -23,7 +23,7 @@
   --carousel-teaser-heading-color: #4f0031;
 
   /* ===== TYPOGRAPHY - BODY ===== */
-  --carousel-teaser-body-font-family: 'Inter', sans-serif;
+  --carousel-teaser-body-font-family: var(--body-font-family);
   --carousel-teaser-body-font-size: 18px;
   --carousel-teaser-body-font-weight: 400;
   --carousel-teaser-body-font-style: normal;
@@ -32,7 +32,7 @@
   --carousel-teaser-body-color: #363b3b;
 
   /* ===== TYPOGRAPHY - BUTTON ===== */
-  --carousel-teaser-button-font-family: 'Inter', sans-serif;
+  --carousel-teaser-button-font-family: var(--body-font-family);
   --carousel-teaser-button-font-size: 16px;
   --carousel-teaser-button-font-weight: 600;
   --carousel-teaser-button-font-style: normal;
